@@ -17,4 +17,21 @@ func main() {
 	v := sence["route2"]
 	fmt.Println(v)
 
+	sence["brazi"] = 4
+	sence["zz"] = 96
+
+	// 遍历map, for range
+	for k, v := range sence {
+		fmt.Println(k, v)
+	}
+
+	// 只遍历值
+	for _, value := range sence {
+		fmt.Println(value)
+	}
+
+	// 只遍历键
+	for k := range sence {
+		fmt.Println(k)
+	}
 }
