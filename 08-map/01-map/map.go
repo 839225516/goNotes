@@ -20,6 +20,9 @@ func main() {
 	sence["brazi"] = 4
 	sence["zz"] = 96
 
+	// 查看 map的容量
+	fmt.Println("sence的容量是",len(sence))
+
 	// 遍历map, for range
 	for k, v := range sence {
 		fmt.Println(k, v)
