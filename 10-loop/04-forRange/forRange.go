@@ -47,4 +47,8 @@ func main() {
 		fmt.Println(v)
 	}
 
+	// 匿名变量，选择希望获取的变量
+	for _, value := range m {
+		fmt.Println(value)
+	}
 }
