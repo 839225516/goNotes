@@ -42,4 +42,7 @@ func main(){
 	for i:=List.Front(); i != nil; i= i.Next(){
 		fmt.Println(i.Value)
 	}
+
+	// 获取列表的长度
+	fmt.Println(List.Len())
 }
