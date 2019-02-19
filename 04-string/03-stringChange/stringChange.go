@@ -10,5 +10,8 @@ func main() {
 		angelByes[i] = ' '
 	}
 
+	fmt.Println(angel)
+	fmt.Println(angelByes)
+
 	fmt.Println(string(angelByes))
 }
