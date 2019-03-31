@@ -23,7 +23,8 @@ func NewCatByColor(color string) *Cat {
 
 func main() {
 	var kity *Cat = NewCatByName("kitty")
-	var whiteCat *Cat = NewCatByColor("white")
+	var whiteCat = &Cat{}
+	whiteCat = NewCatByColor("white")
 
 	fmt.Println(kity.Name)
 	fmt.Println(whiteCat)
