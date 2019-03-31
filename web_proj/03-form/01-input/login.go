@@ -38,6 +38,11 @@ func login(w http.ResponseWriter, r *http.Request) {
 
 		fmt.Println("username:", r.Form["username"])
 		fmt.Println("passwd:", r.Form["password"])
+
+		// 安全验证方式
+		fmt.Println("username:", template.HTMLEscapeString(r.Form.Get("username"))) //输出到服务器端
+		fmt.Println("password:", template.HTMLEscapeString(r.Form.Get("password")))
+		template.HTMLEscape(w, []byte(r.Form.Get("username"))) //输出到客户端
 	}
 }
 
