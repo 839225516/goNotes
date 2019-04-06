@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+/*
+	类型断言的格式
+	t,ok := i.(T)
+	i 代表接口变量
+	T 代表转换的目标类型
+	t 代表转换后的变量
+*/
+
 type Flyer interface {
 	Fly()
 }
