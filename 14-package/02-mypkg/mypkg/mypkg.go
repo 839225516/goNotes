@@ -12,6 +12,12 @@ var myVar = 100
 const MyConst = 89
 
 type Mystruct struct {
+
+	// 首字母大写的成员，外部可以访问
+	ExportedField int
+
+	// 首字母小写的，仅限包内访问
+	privateMethod()
 }
 
 func Add(a, b int) int {
